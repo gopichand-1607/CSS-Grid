@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            background-color: lightblue;
+            display: grid;
+            width: 500px;
+            height: 300px;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2, 1fr);
+            padding:20px;
+            gap: 20px 10px;
+        }
+        #container > div {
+            padding: 20px;
+        }
+        #container > div:nth-child(1){
+            background-color: lightgreen;
+        }
+        #container > div:nth-child(2){
+            background-color: lightsalmon;
+        }
+        #container > div:nth-child(3){
+            background-color: lightgray;
+        }
+        #container > div:nth-child(4){
+            background-color: lightcyan;
+        }
+        #container > div:nth-child(5){
+            background-color: lightyellow;
+        }
+        #container > div:nth-child(6){
+            background-color: lightpink;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>

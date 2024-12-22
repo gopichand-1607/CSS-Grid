@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #container {
+            background-color: lightblue;
+            display: grid;
+            grid-template-columns:repeat(3,200px); 
+            grid-template-rows: repeat(2,200px);
+            padding:20px;
+            gap: 20px 10px;
+            grid-template-areas: 
+            "gre sa gr"
+            "cy ye co";
+            justify-content: center;
+        }
+
+        #container > div {
+           display: flex;
+           justify-content: center;
+           align-items: center;
+           font-size: 30px;
+        }
+
+        #container > div:nth-child(1){
+            background-color: lightgreen;
+            /* grid-area: green; */
+            grid-area: gre;
+        }
+
+        #container > div:nth-child(2){
+            background-color: lightsalmon;
+            /* grid-area: salmon; */
+            grid-area: sa;
+        }
+
+        #container > div:nth-child(3){
+            background-color: lightgray;
+            /* grid-area: gray; */
+            grid-area: gr;
+        }
+
+        #container > div:nth-child(4){
+            background-color: lightcyan;
+            /* grid-area: cyan; */
+            grid-area: cy;
+        }
+
+        #container > div:nth-child(5){
+            background-color: lightyellow;
+            /* grid-area: yellow; */
+            grid-area: ye;
+        }
+        
+        #container > div:nth-child(6){
+            background-color: lightcoral;
+            /* grid-area: coral; */
+            grid-area: co;
+        }
+    </style>
+</head>
+<body>
+    <div id="container">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+        <div>6</div>
+    </div>
+</body>
+</html>
